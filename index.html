@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Silvester Lopez</title>
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Roshan Silvester Lopez</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" >About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Roshan Silvester Lopez</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profilephoto.png" alt="Roshan Silvester Lopez Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Roshan Silvester Lopez</h1>
+            <p class="section__text__p2">Interaction Designer</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-1" 
+                onclick="window.open('./assets/resume.pdf')">
+                Download CV</button>
+
+                <button 
+                class="btn btn-color-2" 
+                onclick="location.href='./index.html#contact'">
+                Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon profile-icon" onclick="location.href='https://www.linkedin.com/in/roshanslopez/'">
+
+                <img src="./assets/behance.svg" alt="My Behnace" class="icon profile-icon" onclick="location.href='https://www.behance.net/roshanlopez'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/main.jpg" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class = "icon">
+                        <h3>Experience</h3>
+                        <p>1+ years <br>Designer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class = "icon">
+                        <h3>Education</h3>
+                        <p>B.Tech Electronics & Communication Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    Hey there! <br><br>I'm Roshan Silvester Lopez, a passionate designer trying to develop seamless user experiences for complex digital solutions.
+                    <br><br>"We are taught what to see, and not what to look for." might just be my favourite quote, which I can relate to the design field as well.
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow-icon" class="icon arrow" onclick="location.href='./index.html#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Interaction Design</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>User Interface</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>User Research</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Visual Design</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Prototyping</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Motion Graphics</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>User Testing</h3>
+                                
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Tools & Softwares</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Figma</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Notion</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Adobe Suite</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Blender 3D</h3>
+                                
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow-icon" class="icon arrow" onclick="location.href='./index.html#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/prohome.jpg" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Pro-Home</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.behance.net/gallery/135152949/Pro-Home')">Behance</button>
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.figma.com/proto/pLd0heJLhPrHYnoxi73yL7/SMARTSWITCH?node-id=1-2&node-type=canvas&t=gPcMzXdGwsaFJX5g-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2')">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/paperback.jpg" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">PaperBack</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.behance.net/gallery/135096331/PaperBack')">Behance</button>
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.figma.com/proto/4eGYMqChjmcgI4qzu2cRSA/INTRICADO?node-id=5-1274&node-type=canvas&t=OJ6orfElY57hq5Bo-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A1274')">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/fedcard.jpg" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Card Design</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.behance.net/gallery/204606451/Federal-Bank-Credit-card')">Behance</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow-icon" class="icon arrow" onclick="location.href='./index.html#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon ">
+                <p><a href="mailto:silvesterroshan1@gmail.com">silvesterroshan1@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/roshanslopez/", target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-coontainer">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Roshan Silvester Lopez. All Rights Reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
