@@ -195,6 +195,16 @@ section {
     transform: scale(1.18) translate(0,-20px);   
 }
 
+.about-pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0 ;
+
+}
+
+
+
 .section__text{
     align-self: center;
     text-align: center;
