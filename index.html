@@ -43,7 +43,7 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Roshan Silvester Lopez</h1>
-            <p class="section__text__p2">Interaction Designer</p>
+            <p class="section__text__p2"><span class="auto-type"></span></p>
             <div class="btn-container">
                 <button 
                 class="btn btn-color-1" 
@@ -250,5 +250,16 @@
         <p>Copyright &#169; 2024 Roshan Silvester Lopez. All Rights Reserved.</p>
     </footer>
     <script src="scripts.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type" ,{
+            strings : ["Interaction Designer", "Visual Geek", "Avid Reader"],
+            typeSpeed:150,
+            backSpeed:150,
+            loop:true
+        })
+
+    </script>
+    
 </body>
 </html>
