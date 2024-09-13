@@ -85,7 +85,10 @@ nav ul li a:hover::after{
 
 .hamburger-menu{
     position: relative;
+    z-index: 1;
     display: inline-block;
+    
+
 }
 
 .hamburger-icon{
@@ -105,6 +108,7 @@ nav ul li a:hover::after{
 }
 
 .menu-links{
+    border-radius: 2rem;
     position: absolute;
     top: 100%;
     right: 0%;
@@ -196,6 +200,8 @@ section {
 
 .section__pic-container{
     display: flex;
+    position: relative;
+    z-index: 0;
     height: 400px;
     width: 400px;
     margin: auto 0 ;

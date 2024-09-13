@@ -112,6 +112,12 @@
     
     }
 
+    .hero-pic:hover{
+        transition: 0.8s ease-in-out;
+        border-radius: 4.5rem;
+        
+    }
+
     .nav-links{
         flex-direction: column;
         gap: 0.5rem;
