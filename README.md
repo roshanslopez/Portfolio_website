@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-Welcome to my portfolio website! This site showcases my work and skills as a designer. It's built using just HTML, CSS, and JavaScript.
+Welcome to my portfolio website! This site showcases my work and skills. It's built using just HTML, CSS, and JavaScript.
 
 ## Overview
 
