@@ -1,263 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roshan Silvester Lopez</title>
+    <meta name="description" content="Roshan Silvester Lopez — Multipotentialite, Visual Geek, and Resolution Specialist at CareStack. UX, design, and product thinking from Kerala.">
+    <meta property="og:title" content="Roshan Silvester Lopez — UX & Product">
+    <meta property="og:description" content="Multipotentialite. Visual Geek. Avid Reader. Based in Kerala.">
+    <meta property="og:type" content="website">
     <link rel="icon" href="./assets/favicon.png">
+    <link rel="preload" as="image" href="./assets/Roshan Silvester Lopez Hero Image.jpeg">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Roshan Silvester Lopez</div>
-        <div>
+        <div class="logo" onclick="location.href='#profile'" style="cursor: pointer;">
+    Roshan Silvester Lopez
+</div>
+</div>
+        <div style="display:flex; align-items:center; gap:2rem;">
             <ul class="nav-links">
-                <li><a href="#about" >About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">☀</span>
+            </button>
         </div>
     </nav>
+
     <nav id="hamburger-nav">
-        <div class="logo">Roshan Silvester Lopez</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="logo" onclick="location.href='#profile'" style="cursor: pointer;">
+    Roshan Silvester Lopez
+</div>
+        <div style="display:flex; align-items:center; gap:1rem;">
+            <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Toggle dark mode">
+                <span class="theme-icon">☀</span>
+            </button>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Open menu" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
             </div>
         </div>
     </nav>
+
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/Roshan Silvester Lopez Hero Image.jpeg" alt="Roshan Silvester Lopez Profile Picture" class="hero-pic">
+        <div class="section__pic-container reveal">
+            <img src="./assets/Roshan Silvester Lopez Hero Image.jpeg" alt="Roshan Silvester Lopez — profile photo" class="hero-pic">
         </div>
-        <div class="section__text">
+        <div class="section__text reveal">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Roshan Silvester Lopez</h1>
             <p class="section__text__p2"><span class="auto-type"></span></p>
             <div class="btn-container">
-                <button 
-                class="btn btn-color-1" 
-                onclick="window.open('./assets/Roshan Silvester Lopez.pdf')">
-                Download CV</button>
-
-                <button 
-                class="btn btn-color-2" 
-                onclick="location.href='https://drive.google.com/drive/u/0/folders/1OKAZSQHJDNARVcAR1OGgrGM9ur8MoQ2a'">
-                Google Drive</button>
+                <button class="btn btn-color-1" onclick="window.open('./assets/Roshan Silvester Lopez.pdf')" aria-label="Download CV PDF">
+                    Download CV
+                </button>
+                <button class="btn btn-color-2" onclick="location.href='https://drive.google.com/drive/u/0/folders/1OKAZSQHJDNARVcAR1OGgrGM9ur8MoQ2a'" aria-label="Open Google Drive">
+                    Google Drive
+                </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon profile-icon" onclick="location.href='https://www.linkedin.com/in/roshanslopez/'">
-
-                <img src="./assets/behance.svg" alt="My Behnace" class="icon profile-icon" onclick="location.href='https://www.behance.net/roshanlopez'">
+                <a href="https://www.linkedin.com/in/roshanslopez/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon profile-icon">
+                </a>
+                <a href="https://www.behance.net/roshanlopez" target="_blank" rel="noopener" aria-label="Behance Portfolio">
+                    <img src="./assets/behance.svg" alt="Behance" class="icon profile-icon">
+                </a>
             </div>
         </div>
     </section>
 
     <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
+        <p class="section__text__p1 reveal">Get to Know More</p>
+        <h1 class="title reveal">About Me</h1>
         <div class="section-container">
-            <div class="about-pic-container">
-                <img src="./assets/main.jpg" alt="Profile Picture" class="about-pic">
+            <div class="about-pic-container reveal">
+                <img src="./assets/main.jpg" alt="Roshan Silvester Lopez — casual photo" class="about-pic" loading="lazy">
             </div>
-            <div class="about-details container">
+            <div class="about-details container reveal">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class = "icon">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
                         <h3>Experience</h3>
-                        <p><b>CareStack </b><br>Resolution Specialist</p>
+                        <p><b>CareStack</b><br>Resolution Specialist</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class = "icon">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
                         <h3>Education</h3>
-                        <p>B.Tech Electronics & Communication Engineering</p>
+                        <p>B.Tech Electronics &amp; Communication Engineering</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    Hey there! <br><br>I'm Roshan Silvester Lopez, based in Kerala, I’m naturally curious and love learning how systems work,
-                    whether it’s a product, a process, or a story. I enjoy blending logic with creativity, which is why I gravitate toward both tech and design.
-
-                    <br><br>"We are taught what to see, and not what to look for." might just be my favourite quote, which I can relate to the design field as well.
+                    Hey there! <br><br>
+                    I'm Roshan Silvester Lopez, based in Kerala. I'm naturally curious and love learning how systems work — whether it's a product, a process, or a story. I enjoy blending logic with creativity, which is why I gravitate toward both tech and design.
+                    <br><br>
+                    <em>"We are taught what to see, and not what to look for."</em> — a quote I deeply relate to, especially in the design field.
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow-icon" class="icon arrow" onclick="location.href='./index.html#experience'">
+        <img src="./assets/arrow.png" alt="Scroll to Experience" class="icon arrow" onclick="location.href='./index.html#experience'">
     </section>
 
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Areas of Focus</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>User Experience Analysis</h3>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Simplify Processes</h3>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Workflow Automations</h3>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>User Testing</h3>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Data Visualization</h3>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Stakeholder Communication</h3>
-                                
-                            </div>
-                        </article>
+        <p class="section__text__p1 reveal">Explore My</p>
+        <h1 class="title reveal">Experience</h1>
+        
+        <div class="experience-marquee-wrapper">
+            <div class="marquee-container reveal">
+                <h2 class="experience-sub-title">Areas of Focus</h2>
+                <div class="marquee-window">
+                    <div class="marquee-content scroll-left">
+                        <article><h3>User Experience Analysis</h3></article>
+                        <article><h3>Simplify Processes</h3></article>
+                        <article><h3>Workflow Automations</h3></article>
+                        <article><h3>User Testing</h3></article>
+                        <article><h3>Data Visualization</h3></article>
+                        <article><h3>Stakeholder Communication</h3></article>
+                        <article><h3>User Experience Analysis</h3></article>
+                        <article><h3>Simplify Processes</h3></article>
+                        <article><h3>Workflow Automations</h3></article>
+                        <article><h3>User Testing</h3></article>
                     </div>
                 </div>
+            </div>
 
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Tools & Softwares</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Jira API & workflows</h3>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>MySQL</h3>
-                                
-                            </div>
-                        </article>
-
-                         <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Google Apps Script</h3>
-                                
-                            </div>
-                        </article>
-                        
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Figma</h3>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Notion</h3>
-                                
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Adobe Suite</h3>
-                                
-                            </div>
-                        </article>
-                        
+            <div class="marquee-container reveal">
+                <h2 class="experience-sub-title">Tools & Softwares</h2>
+                <div class="marquee-window">
+                    <div class="marquee-content scroll-right">
+                        <article><h3>Jira API & Workflows</h3></article>
+                        <article><h3>MySQL</h3></article>
+                        <article><h3>Google Apps Script</h3></article>
+                        <article><h3>Figma</h3></article>
+                        <article><h3>Notion</h3></article>
+                        <article><h3>Adobe Suite</h3></article>
+                        <article><h3>Jira API & Workflows</h3></article>
+                        <article><h3>MySQL</h3></article>
+                        <article><h3>Google Apps Script</h3></article>
+                        <article><h3>Figma</h3></article>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow-icon" class="icon arrow" onclick="location.href='./index.html#projects'">
+
+        <img src="./assets/arrow.png" alt="Scroll to Projects" class="icon arrow" onclick="location.href='./index.html#projects'">
     </section>
 
     <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <p class="section__text__p1 reveal">Browse My Recent</p>
+        <h1 class="title reveal">Projects</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/prohome.jpg" alt="project 1" class="project-img">
+            <div class="about-containers project-grid-wrapper">
+                
+                <div class="details-container color-container reveal">
+                    <div class="article-container">
+                        <img src="./assets/prohome.jpg" alt="Pro-Home project" class="project-img" loading="lazy">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Pro-Home</h2>
+                    <p class="project-desc">A smart home switch app redesign focused on simplifying automation flows.</p>
+                    <div class="btn-container">
+                        <a class="btn btn-color-2 project-btn" href="https://www.behance.net/gallery/135152949/Pro-Home" target="_blank">Behance</a>
+                        <a class="btn btn-color-2 project-btn" href="https://www.figma.com/proto/pLd0heJLhPrHYnoxi73yL7/SMARTSWITCH?node-id=1-2" target="_blank">Live Demo</a>
+                    </div>
                 </div>
-                <h2 class="experience-sub-title project-title">Pro-Home</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.behance.net/gallery/135152949/Pro-Home')">Behance</button>
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.figma.com/proto/pLd0heJLhPrHYnoxi73yL7/SMARTSWITCH?node-id=1-2&node-type=canvas&t=gPcMzXdGwsaFJX5g-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2')">Live Demo</button>
+
+                <div class="details-container color-container reveal">
+                    <div class="article-container">
+                        <img src="./assets/paperback.jpg" alt="PaperBack project" class="project-img" loading="lazy">
+                    </div>
+                    <h2 class="experience-sub-title project-title">PaperBack</h2>
+                    <p class="project-desc">A book discovery app designed to bring editorial warmth to digital reading.</p>
+                    <div class="btn-container">
+                        <a class="btn btn-color-2 project-btn" href="https://www.behance.net/gallery/135096331/PaperBack" target="_blank">Behance</a>
+                        <a class="btn btn-color-2 project-btn" href="https://www.figma.com/proto/4eGYMqChjmcgI4qzu2cRSA/INTRICADO?node-id=5-1274" target="_blank">Live Demo</a>
+                    </div>
                 </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/paperback.jpg" alt="project 1" class="project-img">
+
+                <div class="details-container color-container reveal">
+                    <div class="article-container">
+                        <img src="./assets/fedcard.jpg" alt="Federal Bank project" class="project-img" loading="lazy">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Card Design</h2>
+                    <p class="project-desc">A concept redesign of the Federal Bank credit card exploring visual branding.</p>
+                    <div class="btn-container">
+                        <a class="btn btn-color-2 project-btn" href="https://www.behance.net/gallery/204606451/Federal-Bank-Credit-card" target="_blank">Behance</a>
+                    </div>
                 </div>
-                <h2 class="experience-sub-title project-title">PaperBack</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.behance.net/gallery/135096331/PaperBack')">Behance</button>
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.figma.com/proto/4eGYMqChjmcgI4qzu2cRSA/INTRICADO?node-id=5-1274&node-type=canvas&t=OJ6orfElY57hq5Bo-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A1274')">Live Demo</button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/fedcard.jpg" alt="project 1" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Card Design</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.behance.net/gallery/204606451/Federal-Bank-Credit-card')">Behance</button>
-                </div>
+
             </div>
         </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow-icon" class="icon arrow" onclick="location.href='./index.html#contact'">
+        <img src="./assets/arrow.png" alt="Scroll to Contact" class="icon arrow" onclick="location.href='./index.html#contact'">
     </section>
 
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon ">
-                <p><a href="mailto:silvesterroshan1@gmail.com">silvesterroshan1@gmail.com</a></p>
-            </div>
+        <p class="section__text__p1 reveal">Get in Touch</p>
+        <h1 class="title reveal">Contact Me</h1>
+        <div class="contact-info-upper-container reveal">
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/roshanslopez/", target="_blank">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/roshanslopez/" target="_blank" rel="noopener">LinkedIn</a></p>
             </div>
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:silvesterroshan1@gmail.com">silvesterroshan1@gmail.com</a></p>
+            </div>
+            
         </div>
     </section>
+
     <footer>
         <nav>
-            <div class="nav-links-coontainer">
+            <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
@@ -266,19 +235,62 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2026 Roshan Silvester Lopez. All Rights Reserved.</p>
+        <p>&#169; 2026 Roshan Silvester Lopez.</p>
     </footer>
-    <script src="scripts.js"></script>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed(".auto-type" ,{
-            strings : ["Multipotentialite", "Visual Geek", "Avid Reader"],
-            typeSpeed:150,
-            backSpeed:150,
-            loop:true
-        })
+        // Typed.js
+        var typed = new Typed(".auto-type", {
+            strings: ["Multipotentialite", "Visual Geek", "Avid Reader"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
 
+        // Dark mode
+        const root = document.documentElement;
+        const toggleBtns = document.querySelectorAll('.theme-toggle');
+        const icons = document.querySelectorAll('.theme-icon');
+
+        function setTheme(theme) {
+            root.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            icons.forEach(icon => {
+                icon.textContent = theme === 'dark' ? '☽' : '☀';
+            });
+        }
+
+        const saved = localStorage.getItem('theme');
+        if (saved) setTheme(saved);
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+
+        toggleBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const current = root.getAttribute('data-theme');
+                setTheme(current === 'dark' ? 'light' : 'dark');
+            });
+        });
+
+        // Scroll animations
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealEls.forEach(el => observer.observe(el));
+
+        function toggleMenu() {
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".hamburger-icon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
     </script>
-    
 </body>
 </html>
